@@ -309,15 +309,15 @@ symfonyのリクエストの初期段階でイベントリスナーを登録す�
 プラグイン(下記を参照)は独自のイベントリスナーを登録できます。これらのプラグインはプラグインの`config/config.php`スクリプトでこれを実行します。これはアプリケーションの初期化のあいだに実行され`$this->dispatcher`を通してEvent Dispatcherにアクセスできます。
 
 >**SIDEBAR**
->Propelのビヘイビアー
+>Propelのビヘイビア
 >
 >以前8章で説明しましたが、Propelはイベントシステムを利用します。正直に言えば、これらはsymfony1.0のイベントシステムを利用しますが、問題ありません。これらはPropelが生成したオブジェクトの拡張を有効にするためのイベントの登録と扱うコードをパッケージにします。例を見てみましょう。
 >
 >Propelオブジェクトはすべてが`delete()`メソッドを持つデータベースのテーブルに対応します。`delete`メソッドはデータベースから関連するレコードを削除します。しかし、レコードを削除できない`Invoice`クラスに関して、データベース内部のレコードを維持できるように`delete()`メソッドを変更して、`is_deleted`属性の値をtrueに変更するとよいでしょう。通常のオブジェクトの読みとりメソッド(`doSelect()`、`retrieveByPk()`)は`is_deleted`が`false`であるとレコードをみなすだけです。本当にレコードを削除できる`forceDelete()`と呼ばれる別のメソッドを追加することも必要です。実際、これらすべての修正は`ParanoidBehavior`と呼ばれる新しいクラスにまとめられます。最後の`Invoice`クラスはPropelの`BaseInvoice`クラスを継承し、ミックスインされた`ParanoidBehaviorMixin`のメソッドを持ちます。
 >
->ビヘイビアーはPropelオブジェクト上のmixinです。実際に、symfonyにおいて"ビヘイビアー"という用語は複数の内容をカバーします: mixinはプラグインとしてパッケージになります。さきほど述べた`ParanoidBehavior`クラスは`sfPropelParanoidBehaivorPlugin`と呼ばれる実在のsymfonyプラグインに対応します。このプラグインのインストール方法と使いかたに関する詳細な内容はsymfony公式サイトのwiki([http://www.symfony-project.org/plugins/sfPropelParanoidBehaviorPlugin](http://www.symfony-project.org/plugins/sfPropelParanoidBehaviorPlugin))を参照してください。
+>ビヘイビアはPropelオブジェクト上のmixinです。実際に、symfonyにおいて"ビヘイビア"という用語は複数の内容をカバーします: mixinはプラグインとしてパッケージになります。さきほど述べた`ParanoidBehavior`クラスは`sfPropelParanoidBehaivorPlugin`と呼ばれる実在のsymfonyプラグインに対応します。このプラグインのインストール方法と使いかたに関する詳細な内容はsymfony公式サイトのwiki([http://www.symfony-project.org/plugins/sfPropelParanoidBehaviorPlugin](http://www.symfony-project.org/plugins/sfPropelParanoidBehaviorPlugin))を参照してください。
 >
->ビヘイビアーに関して最後の一言です: これらをサポートできるようにするには、Propelの生成オブジェクトはかなりの数のイベント通知機能を収納しなければなりません。ビヘイビアーを使わない場合、これらが実行を遅くしてパフォーマンスを悪化させることがあります。デフォルトでイベントが有効になっていないのはそういうわけです。これを追加することでビヘイビアーのサポートを有効にするには、最初に`propel.ini`ファイルのなかの`propel.builder.addBehaviors`プロパティを`true`にセットしてモデルをリビルドしなければなりません。
+>ビヘイビアに関して最後の一言です: これらをサポートできるようにするには、Propelの生成オブジェクトはかなりの数のイベント通知機能を収納しなければなりません。ビヘイビアを使わない場合、これらが実行を遅くしてパフォーマンスを悪化させることがあります。デフォルトでイベントが有効になっていないのはそういうわけです。これを追加することでビヘイビアのサポートを有効にするには、最初に`propel.ini`ファイルのなかの`propel.builder.addBehaviors`プロパティを`true`にセットしてモデルをリビルドしなければなりません。
 
 ファクトリ
 ----------
@@ -584,7 +584,7 @@ symfonyの公式サイトにはプラグイン専用のページが存在して�
   * `sfErrorLoggerPlugin`: データベースにすべての404エラーと500エラーをログに記録しこれらのエラーを閲覧するためのadministrationモジュールを提供する
   * `sfSslRequirementPlugin`: アクションのためのSSL暗号化サポートを提供する
 
-公式サイトはビヘイビアー(behavior)と呼ばれる、Propelオブジェクトを拡張するために設計されたプラグインも提示します。これらのなかで、つぎのものが見つかります:
+公式サイトはビヘイビア(behavior)と呼ばれる、Propelオブジェクトを拡張するために設計されたプラグインも提示します。これらのなかで、つぎのものが見つかります:
 
   * `sfPropelParanoidBehaviorPlugin`: オブジェクトの削除を無効にして、`deleted_at`カラムの更新で置き換える
   * `sfPropelOptimisticLockBehaviorPlugin`: Propelオブジェクト用にオプティミスティックロック(楽観的ロック)を実装する
@@ -770,7 +770,7 @@ PEARのプラグインをアンインストールするには、リスト17-18�
           name:           { type: varchar, size: 255, index: unique }
           ...
 
-  * プラグインの設定はプラグインのブートストラップスクリプト(`config.php`)に格納されます。このファイルはアプリケーションとプロジェクト設定のあとで実行されるので、すでにその時点でsymfonyは起動しています。たとえば、既存のクラスをイベントリスナーもしくはビヘイビアーで拡張するためです。
+  * プラグインの設定はプラグインのブートストラップスクリプト(`config.php`)に格納されます。このファイルはアプリケーションとプロジェクト設定のあとで実行されるので、すでにその時点でsymfonyは起動しています。たとえば、既存のクラスをイベントリスナーもしくはビヘイビアで拡張するためです。
   * プラグインの`data/fixtures/`ディレクトリに設置されたフィクスチャファイルは`propel:load-data`タスクで処理されます。
   * プロジェクトの`lib/`フォルダーに設置されたクラスのようにカスタムクラスはオートロードされます。
   * テンプレートのなかで`use_helper()`ヘルパを呼び出すときにヘルパは自動的に発見されます。これらはプラグインの`lib/`ディレクトリの1つの`helper/`サブディレクトリに存在しなければなりません。
