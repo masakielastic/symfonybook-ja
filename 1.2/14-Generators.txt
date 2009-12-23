@@ -761,7 +761,7 @@ administrationモジュールはユーザーが通常のCRUDオペレーショ�
 リスト14-33 - カスタムインタラクションアクション(`actions/actions.class.php`)
 
     [php]
-    public function executeAddComment($request)
+    public function executeAddComment(sfWebRequest $request)
     {
       $comment = new BlogComment();
       $comment->setArticleId($request->getParameter('id'));

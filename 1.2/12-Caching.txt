@@ -313,7 +313,7 @@ symfonyコマンドラインの`cache:clear`タスクはキャッシュ(HTML、�
 リスト12-9 - アクションのキャッシュをクリアする(`modules/user/actions/actions.class.php`)
 
     [php]
-    public function executeUpdate($request)
+    public function executeUpdate(sfWebRequest $request)
     {
       // ユーザーを更新する
       $user_id = $request->getParameter('id');

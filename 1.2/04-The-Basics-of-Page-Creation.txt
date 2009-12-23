@@ -33,7 +33,7 @@ symfonyコマンドはモジュールを作る作業を自動化します。必�
 
     class contentActions extends sfActions
     {
-      public function executeIndex()
+      public function executeIndex(sfWebRequest $request)
       {
         $this->forward('default', 'module');
       }
@@ -71,7 +71,7 @@ symfonyにおいて、ページの背後にあるロジックはアクション�
 
     class contentActions extends sfActions
     {
-      public function executeShow()
+      public function executeShow(sfWebRequest $request)
       {
       }
     }
@@ -156,7 +156,7 @@ symfonyが`showSuccess.php`テンプレートが見つからないことを訴�
 
     class contentActions extends sfActions
     {
-      public function executeShow()
+      public function executeShow(sfWebRequest $request)
       {
         $today = getdate();
         $this->hour = $today['hours'];
@@ -253,7 +253,7 @@ symfonyのすべてのヘルパーのように、リンクヘルパーとオプ�
     {
       // ...
 
-      public function executeUpdate($request)
+      public function executeUpdate(sfWebRequest $request)
       {
         $this->name = $request->getParameter('name');
       }

@@ -514,7 +514,7 @@ URLが複数のルールにマッチするとき、制約もしくは要件(requ
 >`permalink`アクションはタイトルからリクエストされた記事を決定する必要があるので、モデルは適切なメソッドを提供しなければなりません。
 >
 >     [php]
->     public function executePermalink($request)
+>     public function executePermalink(sfWebRequest $request)
 >     {
 >       $article = ArticlePeer::retrieveBySlug($request->getParameter('slug');
 >       $this->forward404Unless($article);  // 記事がスラッグにマッチしない場合404を表示する

@@ -556,7 +556,7 @@ Propelの生成オブジェクトは長いカスケード状のクラスに依�
 
     [php]
     // modules/foobar/actions/actions.class.phpのアクションの例
-    public function executeUpdate($request)
+    public function executeUpdate(sfWebRequest $request)
     {
       // ...
 

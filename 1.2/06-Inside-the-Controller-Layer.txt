@@ -122,12 +122,12 @@ symfonyの内部にご興味がなければ、フロントコントローラー�
     [php]
     class mymoduleActions extends sfActions
     {
-      public function executeIndex()
+      public function executeIndex(sfWebRequest $request)
       {
         // ...
       }
 
-      public function executeList()
+      public function executeList(sfWebRequest $request)
       {
         // ...
       }
@@ -157,7 +157,7 @@ symfonyの内部にご興味がなければ、フロントコントローラー�
     [php]
     class indexAction extends sfAction
     {
-      public function execute($request)
+      public function execute(sfWebRequest $request)
       {
         // ...
       }
@@ -168,7 +168,7 @@ symfonyの内部にご興味がなければ、フロントコントローラー�
     [php]
     class listAction extends sfAction
     {
-      public function execute($request)
+      public function execute(sfWebRequest $request)
       {
         // ...
       }
@@ -183,7 +183,7 @@ symfonyの内部にご興味がなければ、フロントコントローラー�
     [php]
     class mymoduleActions extends sfActions
     {
-      public function executeIndex($request)
+      public function executeIndex(sfWebRequest $request)
       {
         // リクエストパラメーターを読みとる
         $password    = $request->getParameter('password');
@@ -332,7 +332,7 @@ symfonyは`actionNameMyResult.php`によって呼び出されたテンプレー�
 リスト6-11 - `forward404()`メソッドの使いかた
 
     [php]
-    public function executeShow($request)
+    public function executeShow(sfWebRequest $request)
     {
       $article = ArticlePeer::retrieveByPK($request->getParameter('id'));
       if (!$article)
@@ -350,7 +350,7 @@ symfonyは`actionNameMyResult.php`によって呼び出されたテンプレー�
 
     [php]
     // このアクションはリスト6-12で示されているものと同等である
-    public function executeShow($request)
+    public function executeShow(sfWebRequest $request)
     {
       $article = ArticlePeer::retrieveByPK($request->getParameter('id'));
       $this->forward404If(!$article);
@@ -385,12 +385,12 @@ symfonyは`actionNameMyResult.php`によって呼び出されたテンプレー�
         ...
       }
 
-      public function executeIndex($request)
+      public function executeIndex(sfWebRequest $request)
       {
         ...
       }
 
-      public function executeList($request)
+      public function executeList(sfWebRequest $request)
       {
         ...
         $this->myCustomMethod();  // アクションクラスのメソッドがアクセス可能である
@@ -452,7 +452,7 @@ URI関連の情報                   |                                    |
     [php]
     class mymoduleActions extends sfActions
     {
-      public function executeUpload($request)
+      public function executeUpload(sfWebRequest $request)
       {
         if ($request->hasFiles())
         {
@@ -489,7 +489,7 @@ symfonyはユーザーセッションの管理を自動化してユーザーの�
     [php]
     class mymoduleActions extends sfActions
     {
-      public function executeFirstPage($request)
+      public function executeFirstPage(sfWebRequest $request)
       {
         $nickname = $request->getParameter('nickname');
 
@@ -679,7 +679,7 @@ symfonyのセッションハンドリング機能はPHPセッションに基づ�
     [php]
     class myAccountActions extends sfActions
     {
-      public function executeLogin($request)
+      public function executeLogin(sfWebRequest $request)
       {
         if ($request->getParameter('login') == 'foobar')
         {

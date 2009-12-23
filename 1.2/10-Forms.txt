@@ -170,7 +170,7 @@ Forms in Action"の本も読むべきです。
 >
 >     [php]
 >     // mymodule/actions/actions.class.phpにおいて
->     public function executeEditAuthor($request)
+>     public function executeEditAuthor(sfWebRequest $request)
 >     {
 >       if (!$this->getRequest()->isMethod('post'))
 >       {
@@ -494,7 +494,7 @@ TinyMCEとFCKEditorウィジェットの統合機能のおかげで、`<textarea
 リスト10-17 - オブジェクトフォームヘルパーに基づくフォーム投稿を扱う
 
     [php]
-    public function executeUpdate($request)
+    public function executeUpdate(sfWebRequest $request)
     {
       $author = AuthorPeer::retrieveByPk($request->getParameter('id'));
       $this->forward404Unless($author);
@@ -547,7 +547,7 @@ symfonyはいくつかのバリデーターを搭載しています(この章の
 リスト10-19 - 再利用可能なバリデーターでリクエストパラメーターをバリデートする(`modules/contact/action/actions.class.php`)
 
     [php]
-    public function validateSend($request)
+    public function validateSend(sfWebRequest $request)
     {
       $name = $request->getParameter('name');
 
