@@ -247,7 +247,7 @@ AjaxのリンクはWeb 2.0のアプリケーションで利用できるAjaxの�
 
 図11-1 - ハイパーリンクでリモートの更新を実行する
 
-![ハイパーリンクでリモート更新を実行する](/images/book/F1101.png "ハイパーリンクでリモートの更新を実行する")
+![ハイパーリンクでリモート更新を実行する](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1101.png "ハイパーリンクでリモートの更新を実行する")
 
 リスト11-10で示されるように、文字列の代わりに画像を使い、内部の`module/action`のURLの代わりにルール名を使い、オプションを3番目の引数の`<a>`タグに追加することができます。
 
@@ -283,7 +283,7 @@ Webフォームはよく別のアクションを呼び出しますが、これ�
 
 図11-2 - リモート更新をフォームで実行する
 
-![フォームでリモート更新を実行する](/images/book/F1102.png "フォームでリモート更新を実行する")
+![フォームでリモート更新を実行する](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1102.png "フォームでリモート更新を実行する")
 
 >**CAUTION**
 >Ajaxのフォームはmultipartになることはできません。これは`XMLHttpRequest`オブジェクトの制限です。このことはAjaxフォームを通してファイルのアップロードを処理できないことを意味します。しかしながら、次善策があります。たとえば、`XMLHttpRequest`の代わりに隠し`iframe`を使うことです。
@@ -674,7 +674,7 @@ symfonyのAjaxヘルパーのなかには、単独の呼び出しで複雑なイ
 
 図11-3 - オートコンプリートの例
 
-![オートコンプリートの例](/images/book/F1103.png "オートコンプリートの例")
+![オートコンプリートの例](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1103.png "オートコンプリートの例")
 
 `input_auto_complete_tag()`ヘルパーの3番目の引数はつぎのパラメーターを取ることができます:
 

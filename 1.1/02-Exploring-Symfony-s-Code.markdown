@@ -18,7 +18,7 @@ MVCアーキテクチャはビジネスロジック(モデル)とプレゼンテ
 
 図2-1 - MVCパターン
 
-![MVCパターン](/images/book/F0201.png "MVCパターン")
+![MVCパターン](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F0201.png "MVCパターン")
 
 ### MVC階層化
 
@@ -326,7 +326,7 @@ MVCアーキテクチャをオブジェクト指向ではない言語で実装�
 
 図2-2 - symfonyのワークフロー
 
-![symfonyのワークフロー](/images/book/F0202.png "symfonyのワークフロー")
+![symfonyのワークフロー](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F0202.png "symfonyのワークフロー")
 
 リスト2-11、2-12、2-13で示されるように、このことは私たちの例で説明された投稿の一覧機能をsymfonyで動かすには3つのファイルだけが必要になることを意味します。
 
@@ -413,7 +413,7 @@ symfonyにおいて、プロジェクト(project)とは、同じオブジェク�
 
 図2-3 - コードの編成の例
 
-![コードの編成の例](/images/book/F0203.png "コードの編成の例")
+![コードの編成の例](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F0203.png "コードの編成の例")
 
 ### ファイルのツリー構造
 

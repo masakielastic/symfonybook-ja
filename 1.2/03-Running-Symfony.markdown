@@ -41,7 +41,7 @@ symfonyのCLI(Command Line Interface - コマンドラインインターフェ�
 
 図3-1 - サンドボックスの初期ページ
 
-![サンドボックスの初期ページ](/images/book/F0301.jpg "サンドボックスの初期ページ")
+![サンドボックスの初期ページ](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F0301.jpg "サンドボックスの初期ページ")
 
 サンドボックスの目的はローカルコンピュータでsymfonyを練習することであり、Webに公開予定の複雑なアプリケーションを開発するためではありません。しかしながら、サンドボックスに搭載したsymfonyのバージョンは十分な機能を持ちPEARからインストールしたものと同等です。
 

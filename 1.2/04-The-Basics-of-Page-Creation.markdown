@@ -53,7 +53,7 @@ symfonyコマンドはモジュールを作る作業を自動化します。必�
 
 図4-1 - 生成されたデフォルトのindexページ
 
-![生成されたデフォルトのindexページ](/images/book/F0401.jpg "生成されたデフォルトのindexページ")
+![生成されたデフォルトのindexページ](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F0401.jpg "生成されたデフォルトのindexページ")
 
 ページを追加する
 ----------------

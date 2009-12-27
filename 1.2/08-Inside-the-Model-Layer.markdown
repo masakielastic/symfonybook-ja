@@ -63,7 +63,7 @@ symfony のスキーマ構文は YAML フォーマットを利用します。`sc
 
 図8-1 - ブログのデータベースのテーブル構造
 
-![ブログのデータベースのテーブル構造](/images/book/F0801.png "ブログのデータベースのテーブル構造")
+![ブログのデータベースのテーブル構造](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F0801.png "ブログのデータベースのテーブル構造")
 
 関連する `schema.yml` ファイルはリスト8-3のようになります。
 

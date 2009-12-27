@@ -63,7 +63,7 @@ symfonyが使うデータオブジェクトモデルを作成するために、�
 
 図8-1 - blogのデータベースのテーブル構造
 
-![blogのデータベースのテーブル構造](/images/book/F0801.png "blogのデータベースのテーブル構造")
+![blogのデータベースのテーブル構造](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F0801.png "blogのデータベースのテーブル構造")
 
 関連する`schema.yml`ファイルはリスト8-3のようになります。
 

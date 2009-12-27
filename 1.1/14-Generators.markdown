@@ -43,7 +43,7 @@ Webアプリケーションにおいて、データアクセスのオペレー�
 
 図14-1 データモデルの例
 
-![データモデルの例](/images/book/F1401.png "データモデルの例")
+![データモデルの例](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1401.png "データモデルの例")
 
 コード生成を可能にするためにスキーマ作成の期間で従わなければならない特別なルールは存在しません。symfonyはスキーマをそのまま使用し、administrationを生成するためにスキーマの属性を解釈します。
 
@@ -76,11 +76,11 @@ symfonyによって、モジュールを基本単位としてadministrationを�
 
 図14-5 - `backend`アプリケーション内部の`article`モジュールの`list`ビュー
 
-![backendアプリケーション内部のarticleモジュールのlistビュー](/images/book/F1405.png "backendアプリケーション内部のarticleモジュールのlistビュー")
+![backendアプリケーション内部のarticleモジュールのlistビュー](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1405.png "backendアプリケーション内部のarticleモジュールのlistビュー")
 
 図14-6 - バックエンドで`article`モジュールの`edit`ビュー
 
-![バックエンドでarticleモジュールのeditビュー](/images/book/F1406.png "バックエンドでarticleモジュールのeditビュー")
+![バックエンドでarticleモジュールのeditビュー](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1406.png "バックエンドでarticleモジュールのeditビュー")
 
 ### 生成されたコードを見る
 
@@ -182,7 +182,7 @@ symfonyによって、モジュールを基本単位としてadministrationを�
 
 図14-7 - administrationジェネレーターのチートシート
 
-![administrationジェネレーターチートのシート](/images/book/F1407.png "administrationジェネレーターチートのシート")
+![administrationジェネレーターチートのシート](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1407.png "administrationジェネレーターチートのシート")
 
 ### フィールド
 
@@ -257,11 +257,11 @@ administrationジェネレーターは`schema.yml`ファイルのカラムごと
 
 図14-8 - `comment`モジュールの`list`ビュー内部のカスタムカラム設定
 
-![commentモジュールのlistビュー内部のカスタムカラム設定](/images/book/F1408.png "commentモジュールのlistビュー内部のカスタムカラム設定")
+![commentモジュールのlistビュー内部のカスタムカラム設定](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1408.png "commentモジュールのlistビュー内部のカスタムカラム設定")
 
 図14-9 - `comment`モジュールの`edit`ビュー内部でフィールドを分類する
 
-![commentモジュールのeditビュー内でフィールドを分類する](/images/book/F1409.png "commentモジュールのeditビュー内でフィールドを分類する")
+![commentモジュールのeditビュー内でフィールドを分類する](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1409.png "commentモジュールのeditビュー内でフィールドを分類する")
 
 `display`設定を2つの方法で利用できます:
 
@@ -300,7 +300,7 @@ administrationジェネレーターは`schema.yml`ファイルのカラムごと
 
 図14-10 - `article`モジュールの`list`ビュー内のカスタムフィールド
 
-![articleモジュールのlistビュー内部のカスタムフィールド](/images/book/F1410.png "articleモジュールのlistビュー内部のカスタムフィールド")
+![articleモジュールのlistビュー内部のカスタムフィールド](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1410.png "articleモジュールのlistビュー内部のカスタムフィールド")
 
 カスタムフィールドは生のデータ以上のものを表示するためにHTMLのコードも返すことができます。たとえば、リスト14-12で示されるような`Comment`クラスを`getArticleLink()`メソッドで拡張できます。
 
@@ -327,7 +327,7 @@ administrationジェネレーターは`schema.yml`ファイルのカラムごと
 
 図14-11 - `comment`モジュールの`list`ビュー内部のカスタムフィールド
 
-![commentモジュールのlistビュー内部のカスタムフィールド](/images/book/F1411.png "commentモジュールのlistビュー内部のカスタムフィールド")
+![commentモジュールのlistビュー内部のカスタムフィールド](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1411.png "commentモジュールのlistビュー内部のカスタムフィールド")
 
 #### 部分テンプレートフィールド
 
@@ -388,7 +388,7 @@ administrationジェネレーターは`schema.yml`ファイルのカラムごと
 
 図14-12 - `article`モジュールの`edit`ビュー内部のカスタムタイトル
 
-![articleモジュールのeditビュー内部のカスタムタイトル](/images/book/F1412.png "articleモジュールのeditビュー内部のカスタムタイトル")
+![articleモジュールのeditビュー内部のカスタムタイトル](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1412.png "articleモジュールのeditビュー内部のカスタムタイトル")
 
 デフォルトのタイトルはクラスの名前を使うので、モデルが明白なクラスの名前を使うのであれば、これらのクラス名で十分であることはよくあります。
 
@@ -408,7 +408,7 @@ administrationジェネレーターは`schema.yml`ファイルのカラムごと
 
 図14-13 - `comment`モジュールの`edit`ビュー内部のツールチップ
 
-![commentモジュールのeditビュー内部のツールチップ](/images/book/F1413.png "commentモジュールのeditビュー内部のツールチップ")
+![commentモジュールのeditビュー内部のツールチップ](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1413.png "commentモジュールのeditビュー内部のツールチップ")
 
 `list`ビューにおいて、ツールチップはカラムヘッダーに表示されます; `edit`ビュー内において、これらはinputの下に現れます。
 
@@ -446,7 +446,7 @@ administrationジェネレーターは`schema.yml`ファイルのカラムごと
 
 図14-14 - `comment`モジュールの`list`ビューのなかで、リンクを別のカラム上の`edit`ビューに移動させる
 
-![commentモジュールのlistビュー内で、リンクを別のカラム上のeditビューに移動させる](/images/book/F1414.png "commentモジュールのlistビュー内で、リンクを別のカラム上のeditビューに移動させる")
+![commentモジュールのlistビュー内で、リンクを別のカラム上のeditビューに移動させる](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1414.png "commentモジュールのlistビュー内で、リンクを別のカラム上のeditビューに移動させる")
 
 デフォルトでは、以前示されたように、`list`ビューは、フィールドがカラムとして表示される`tabular`レイアウトを使います。しかし`stacked`レイアウトを使用してフィールドをテーブルの全長を詳しく記述する単独の文字列に連結することもできます。`stacked`レイアウトを選ぶ場合、`params`キーにリストのそれぞれの行の値を定義するパターンを組み込まなければなりません。たとえば、リスト14-22は`comment`モジュールの`list`ビューに対して`stacked`レイヤーを定義します。結果は図14-15です。
 
@@ -461,7 +461,7 @@ administrationジェネレーターは`schema.yml`ファイルのカラムごと
 
 図14-15 - `comment`モジュールの`list`ビュー内部のstackedレイアウト
 
-![commentモジュールのlistビュー内のstackedレイアウト](/images/book/F1415.png "commentモジュールのlistビュー内のstackedレイアウト")
+![commentモジュールのlistビュー内のstackedレイアウト](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1415.png "commentモジュールのlistビュー内のstackedレイアウト")
 
 `tabular`レイアウトは`display`キーの下でフィールドの配列を必要としますが、`stacked`レイアウトはそれぞれのレコードに対して生成されたHTMLコードのために`params`キーを使うことに留意してください。しかしながら、インタラクティブなソートに対して利用できるカラムヘッダーを決定するために`display`配列が`stacked`レイアウトでも使われます
 
@@ -481,7 +481,7 @@ administrationジェネレーターは`schema.yml`ファイルのカラムごと
 
 図14-16 - `comment`モジュールの`list`ビュー内部のフィルター
 
-![commentモジュールのlistビュー内部のフィルター](/images/book/F1416.png "commentモジュールのlistビュー内部のフィルター")
+![commentモジュールのlistビュー内部のフィルター](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1416.png "commentモジュールのlistビュー内部のフィルター")
 
 symfonyによって表示されるフィルターはカラム型に依存します:
 
@@ -519,7 +519,7 @@ symfonyによって表示されるフィルターはカラム型に依存しま�
 
 図14-17 - 空の`author`の値をフィルタリングすることを可能にする
 
-![空のauthorの値をフィルタリングすることを可能にする](/images/book/F1417.png "空のauthorの値をフィルタリングすることを可能にする")
+![空のauthorの値をフィルタリングすることを可能にする](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1417.png "空のauthorの値をフィルタリングすることを可能にする")
 
 #### リストをソートする
 
@@ -527,7 +527,7 @@ symfonyによって表示されるフィルターはカラム型に依存しま�
 
 図14-18 - `list`ビューのテーブルヘッダーはソートをコントロールする
 
-![listビューのテーブルヘッダーはソートはコントロールする](/images/book/F1418.png "listビューのテーブルヘッダーはソートをコントロールする")
+![listビューのテーブルヘッダーはソートはコントロールする](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1418.png "listビューのテーブルヘッダーはソートをコントロールする")
 
 あるひとつのカラムによってソートされたリストを直接指定する構文を再利用できます:
 
@@ -552,7 +552,7 @@ symfonyによって表示されるフィルターはカラム型に依存しま�
 
 図14-19 - パジネーションのコントロール機能は長いリスト上に現れる
 
-![パジネーションのコントロール機能は長いリスト上に現れる](/images/book/F1419.png " パジネーションのコントロール機能は長いリスト上に現れる")
+![パジネーションのコントロール機能は長いリスト上に現れる](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1419.png " パジネーションのコントロール機能は長いリスト上に現れる")
 
 `max_per_page`パラメーターによってそれぞれのページが表示されるレコードの数をカスタマイズできます:
 
@@ -684,7 +684,7 @@ symfonyはテーブルの多対多のリレーションも考慮しますが、�
 
 図14-20 - 多対多のリレーションを実装するためにthrough_classを利用する
 
-![多対多のリレーションを実装するためにthrough_classを利用する](/images/book/F1420.png "多対多のリレーションを実装するために"through class"を利用する")
+![多対多のリレーションを実装するためにthrough_classを利用する](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1420.png "多対多のリレーションを実装するために"through class"を利用する")
 
 モデルは`ArticleAuthor`と呼ばれるクラスを持ち、administrationジェネレーターが必要とする唯一のものです。しかし、これをフィールドの`through_class`パラメーターとして渡さなければなりません。
 
@@ -704,7 +704,7 @@ symfonyはテーブルの多対多のリレーションも考慮しますが、�
 
 図14-21 - 多対多のリレーションに対して利用できるコントロール機能
 
-![多対多のリレーションに対して利用できるコントロール機能](/images/book/F1421.png "多対多のリレーションに対して利用できるコントロール機能")
+![多対多のリレーションに対して利用できるコントロール機能](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1421.png "多対多のリレーションに対して利用できるコントロール機能")
 
 ### インタラクションを追加する
 
@@ -734,7 +734,7 @@ administrationモジュールはユーザーが通常のCRUDオペレーショ�
 
 図14-22 - `list`ビュー内部のインタラクション
 
-![listビュー内部のインタラクション](/images/book/F1422.png "listビュー内部のインタラクション")
+![listビュー内部のインタラクション](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1422.png "listビュー内部のインタラクション")
 
 `edit`ビューにおいて、一度に編集されるレコードは1つだけであり、(`actions`のもとで)定義するアクションのセットは1つだけです。リスト14-31で定義された`edit`インタラクションは図14-23のようにレンダリングされます。`save`アクションと`save_and_add`アクションは現在の編集をレコードに保存します。これらのアクションの違いは、`save`アクションは保存したあとで現在のレコード上に`edit`ビューを表示するのに対して、`save_adn_add`アクションは別のレコードを追加するために空の`empty`ビューを表示することです。`save_and_add`アクションは続けざまに多くのレコードを追加するときに非常に便利なショートカットです。`delete`アクションの位置に関しては、これはほかのボタンから分離されているので、ユーザーが誤ってクリックすることはありません。
 
@@ -742,7 +742,7 @@ administrationモジュールはユーザーが通常のCRUDオペレーショ�
 
 図14-23 - `edit`ビュー内部のインタラクション
 
-![editビュー内部のインタラクション](/images/book/F1423.png "editビュー内部のインタラクション")
+![editビュー内部のインタラクション](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1423.png "editビュー内部のインタラクション")
 
 しかしカスタムインタラクションを追加することもできます。この場合リスト14-32で示されるように、アンダースコアで始まらない名前、と現在のモジュールのなかのターゲットのアクションを指定しなければなりません。
 
@@ -759,7 +759,7 @@ administrationモジュールはユーザーが通常のCRUDオペレーショ�
 
 図14-24 - `list`ビュー内部のカスタムインタラクション
 
-![listビュー内部ののカスタムインタラクション](/images/book/F1424.png "listビュー内部のカスタムインタラクション")
+![listビュー内部ののカスタムインタラクション](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1424.png "listビュー内部のカスタムインタラクション")
 
 `addComment`アクションはリスト14-33のように実装できます。
 

@@ -658,7 +658,7 @@ symfonyのセッションハンドリング機能はPHPセッションに基づ�
 
 図6-1 - デフォルトのセキュアなアクションページ
 
-![デフォルトのセキュアなアクションページ](/images/book/F0601.jpg "デフォルトのセキュアなアクションページ")
+![デフォルトのセキュアなアクションページ](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F0601.jpg "デフォルトのセキュアなアクションページ")
 
 リスト6-22 - デフォルトのセキュリティアクションを定義する(`apps/frontend/config/settings.yml`)
 
@@ -777,7 +777,7 @@ security.ymlファイルのなかで使われるYAMLファイルは、AND型とO
 
 図6-2 - バリデーションのプロセス
 
-![バリデーションのプロセス](/images/book/F0602.png "バリデーションのプロセス")
+![バリデーションのプロセス](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F0602.png "バリデーションのプロセス")
 
 ですのでバリデーションの秘訣はアクションメソッドのために命名規約を尊重することです:
 
@@ -825,7 +825,7 @@ security.ymlファイルのなかで使われるYAMLファイルは、AND型とO
 
 図6-3 - フィルターチェーンのサンプル
 
-![図6-3 - フィルターチェーンのサンプル](/images/book/F0603.png "図6-3 - フィルターチェーンのサンプル")
+![図6-3 - フィルターチェーンのサンプル](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F0603.png "図6-3 - フィルターチェーンのサンプル")
 
 このプロセスはフィルタークラスの構造が正しいことを納得させてくれます。これらすべてのフィルタークラスは`sfFilter`クラスを継承し、`$filterChain`オブジェクトをパラメーターとして必要とする`execute()`メソッドを持ちます。このメソッドのどこかで、フィルターは`$filterChain->execute()`を呼び出すことでチェーンのつぎのフィルターに移動します。リスト6-28を例としてご覧ください。基本的には、フィルターは2つの部分に分割されます:
 

@@ -198,7 +198,7 @@ symfonyは裏で非同期通信リクエストを行うために専用のフォ�
 
 図10-1 - リッチな日付入力タグ
 
-![リッチな日付入力タグ](/images/book/F1001.png "リッチな日付入力タグ")
+![リッチな日付入力タグ](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1001.png "リッチな日付入力タグ")
 
 `rich`オプションが省略された場合、月、日にち、年の範囲で投入されたヘルパーは3つの`<select>`タグを出力します。これらのヘルパー(`select_day_tag()`、`select_month_tag()`と`select_year_tag()`)を呼び出すことでこれらのドロップダウンを個別に表示できます。これらの要素のデフォルト値は現在の日にち、月、年です。リスト10-3は日付入力ヘルパーを示してます。
 
@@ -269,7 +269,7 @@ TinyMCEとFCKEditorウィジェットの統合のおかげで、リッチなテ�
 
 図10-2 - リッチなテキスト編集機能
 
-![リッチなテキスト編集機能](/images/book/F1002.png "リッチなテキスト編集機能")
+![リッチなテキスト編集機能](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F1002.png "リッチなテキスト編集機能")
 
 両方のウィジェットとも手動でインストールする作業が必要です。2つのウィジェットのインストールの手続きは同じなので、ここではTinyMCEのリッチなテキスト編集機能だけを説明します。プロジェクトのWebサイト([http://tinymce.moxiecode.com/](http://tinymce.moxiecode.com/))からエディタをダウンロードし、一時フォルダーに解凍する必要があります。リスト10-6で示されるように、`tinymce/jscripts/tiny_mce/`ディレクトリをプロジェクトの`web/js/`ディレクトリにコピーし、`settings.yml`のなかでライブラリへのパスを定義します。
 
