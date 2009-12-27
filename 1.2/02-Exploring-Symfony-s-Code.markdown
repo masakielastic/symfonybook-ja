@@ -18,7 +18,7 @@ MVCアーキテクチャはビジネスロジック(モデル)とプレゼンテ
 
 図2-1 - MVCパターン
 
-![MVCパターン](/images/book/F0201.png "MVCパターン")
+![MVCパターン](http://github.com/masakielastic/symfonybook-ja/raw/master/images/F0201.png "MVCパターン")
 
 ### MVC階層化
 
